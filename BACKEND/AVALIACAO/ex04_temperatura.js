@@ -1,15 +1,12 @@
-const entrada = require('readline-sync');
+let temperatura = Number(prompt("Digite a temperatura da máquina:"));
 
-
-const temp = entrada.questionFloat("Digite a temperatura: ")
-
-
-    if (temperatura <= 60) {
-        console.log("NORMAL");
-    } else if (temperatura <= 80) {
-        console.log("ATENÇÃO");
-    } else {
-        console.log("CRÍTICA");
-    }
-
-
+if (temperatura <= 60) {
+    console.log("Temperatura:", temperatura + " °C");
+    console.log("Situação: NORMAL");
+} else if (temperatura <= 80) {
+    console.log("Temperatura:", temperatura + " °C");
+    console.log("Situação: ATENÇÃO");
+} else {
+    console.log("Temperatura:", temperatura + " °C");
+    console.log("Situação: CRÍTICA");
+}
