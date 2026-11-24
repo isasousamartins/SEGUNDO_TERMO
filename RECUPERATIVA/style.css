@@ -1,0 +1,315 @@
+/* =================================
+   SCOOBY FOOD FEST
+   IDENTIDADE VISUAL
+================================= */
+
+:root {
+    --marrom: #B78B68;
+    --turquesa: #00BFA5;
+    --roxo: #480052;
+    --verde: #76AC2E;
+    --laranja: #F89536;
+    --creme: #FFF9F0;
+    --branco: #FFFFFF;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--creme);
+    color: var(--roxo);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* =================================
+   CABEÇALHO E MENU
+================================= */
+
+header {
+    background-color: var(--roxo);
+    color: var(--branco);
+
+    min-height: 75px;
+    padding: 18px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--verde);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--verde);
+}
+
+
+
+.banner {
+    background-color: #00BFA5;
+}
+
+.banner-conteudo {
+    max-width: 600px;
+}
+
+.subtitulo {
+    color: var(--verde);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.banner h1 {
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.banner-conteudo > p:not(.subtitulo) {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+
+    background-color: var(--laranja);
+    color: var(--roxo);
+
+    padding: 14px 24px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--verde);
+    transform: translateY(-3px);
+}
+
+#cardapio {
+    padding: 55px 6%;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-secao > p {
+    color: var(--marrom);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.titulo-secao h2 {
+    color: var(--roxo);
+    font-size: 32px;
+}
+
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--branco);
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(72, 0, 82, 0.12);
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 17px;
+    border-top: 4px solid var(--turquesa);
+}
+
+.categoria {
+    color: var(--verde);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card h3 {
+    color: var(--roxo);
+    font-size: 19px;
+    margin: 9px 0;
+}
+
+.card p {
+    color: #716477;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+
+.informacoes {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    padding: 0 6% 55px;
+}
+
+#programacao,
+#sobre {
+    background-color: #F1E9DF;
+
+    padding: 25px;
+
+    border-radius: 12px;
+}
+
+.mini-titulo {
+    color: var(--marrom);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.informacoes h2 {
+    color: var(--roxo);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+/* HORÁRIOS */
+.atividade {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #D6C7B9;
+}
+
+.atividade span {
+    color: var(--verde);
+    font-weight: bold;
+    min-width: 60px;
+    font-size: 14px;
+}
+
+.atividade p {
+    color: #55465D;
+    font-size: 13px;
+}
+
+
+#sobre > p:last-child {
+    color: #55465D;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+
+footer {
+    background-color: var(--roxo);
+    color: var(--branco);
+
+    text-align: center;
+
+    padding: 28px 15px 0;
+}
+
+footer h2 {
+    color: var(--verde);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+footer > p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.contato {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.creditos {
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    padding: 15px 5px;
+
+    color: #D9C9DE;
+    font-size: 11px;
+}
+
+
